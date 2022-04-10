@@ -66,15 +66,15 @@
 }
 
 - (void)testInsertNodeWithValueAfterNode {
-//    [_list insertNodeWithValue:12 afterNode:_nodes[3]];
-//    XCTAssertEqual([[_list nodeAtIndex:4] value], 12);
+    [_list insertNodeWithValue:12 afterNode:_nodes[3]];
+    XCTAssertEqual([[_list nodeAtIndex:4] value], 12);
 }
 
 - (void)testInsertNodeAfterNode {
-//    ListNode* aNode = [[ListNode alloc] initWithValue:28];
-//    [_list insertNode:aNode afterNode:_nodes[5]];
-//    ListNode* prevNode = (ListNode *)_nodes[5];
-//    XCTAssertEqualObjects(aNode, prevNode.next);
+    ListNode* aNode = [[ListNode alloc] initWithValue:28];
+    [_list insertNode:aNode afterNode:_nodes[5]];
+    ListNode* prevNode = (ListNode *)_nodes[5];
+    XCTAssertEqualObjects(aNode, prevNode.next);
 }
 
 - (void)testInsertNodeBeforeNode {

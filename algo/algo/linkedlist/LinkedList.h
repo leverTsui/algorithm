@@ -23,6 +23,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)insertNodeToHead:(nonnull ListNode *)node;
 
 - (void)insertNodeWithValue:(int)value
+                  afterNode:(nonnull ListNode *)node;
+
+- (void)insertNode:(nonnull ListNode *)newNode
+         afterNode:(nonnull ListNode *)p;
+
+- (void)insertNodeWithValue:(int)value
                  beforeNode:(nonnull ListNode *)node;
 
 - (void)insertNode:(nonnull ListNode *)aNode
